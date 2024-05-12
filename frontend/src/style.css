@@ -1,0 +1,10 @@
+/* styles.css */
+.custom-link {
+    text-decoration: none; /* Remove underline */
+    color: blue; /* Use the default text color */
+  }
+
+  .footer-link{
+    text-decoration: none; /* Remove underline */
+    color: inherit;
+  }

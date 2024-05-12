@@ -1,18 +1,19 @@
 import React from 'react';
 import { Card } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import '../style.css';
 
 const Player = ({ player }) => {
   return (
     <Card className='my-3 p-3 rounded'>
-      <Link to={`/player/${player._id}`}>
+      <Link to={`/player/${player._id}`} className="custom-link">
         <Card.Img src={player.image} variant='top' />
       </Link>
 
       <Card.Body>
         <div className="d-flex justify-content-between align-items-center">
             <div>
-            <Link to={`/player/${player._id}`} > {/* Align items */}
+            <Link to={`/player/${player._id}`} className="custom-link" > {/* Align items */}
           <Card.Title as="div">
             <strong>{player.name}</strong>
           </Card.Title>
@@ -23,7 +24,7 @@ const Player = ({ player }) => {
             </div>
         
             <div className="text-end">
-        <Link to={`/player/${player._id}`}>
+        <Link to={`/player/${player._id}`} className="custom-link">
          {/* Right-align number */}
             <strong style={{ fontSize: '80px' }}>{player.number}</strong> {/* Increase font size */}
           
